@@ -26,7 +26,7 @@ case object main:
 
             val firstChar =
                 matching match
-                    case head :: nil =>
+                    case head :: _ =>
                         // We found something !
                         val foundItem = converter(head)
                         // Gather the result, set it on the string
