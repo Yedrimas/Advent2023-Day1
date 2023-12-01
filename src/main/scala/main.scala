@@ -43,6 +43,7 @@ case object main:
     def filterNonDigits(input: String): String =
         input.filter(_.isDigit)
 
+    // Will fail if called without `filterNonDigits`, its ok
     def convertToNum(input: String): Int =
         val minuses = input.map(_ - '0')
         minuses.head * 10 + minuses.last
